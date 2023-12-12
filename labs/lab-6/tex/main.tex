@@ -201,9 +201,9 @@ IP-адресов в соответствии с предыдущими лабо
   permit 10.50.0.0 0.0.0.255
   permit 10.60.0.0 0.0.0.255
 \end{minted}
-После чего access-list был применен для интерфейса FastEthernet0/0:
+После чего access-list был применен для интерфейса FastEthernet0/1:
 \begin{minted}{text}
-  ip nat inside source list NAT int fa0/0 overload
+  ip nat inside source list NAT int fa0/1 overload
 \end{minted}
 
 На втором маршрутизаторе были настроены адреса интерфейсов:
